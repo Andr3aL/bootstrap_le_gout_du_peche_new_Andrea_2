@@ -13,7 +13,7 @@
 } */
 
 .carousel-inner {
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .carousel-inner img.caroussel {
@@ -70,6 +70,10 @@ nav {
     justify-content: space-between;
 }
 
+nav > a {
+    text-decoration: none;
+}
+
 ul.nav a {
     font-size: 0.8rem;
 }
@@ -80,6 +84,10 @@ ul.nav a {
 
 .btna {
     color: gray;
+}
+
+.btna:hover {
+    color: white !important;
 }
 
 .h2 {
@@ -104,11 +112,13 @@ h2 {
     font-size: 1rem;
 }
 
+.commandeEtReserve a:hover {
+    color: white !important;
+}
+
 .commandeEtReserve :nth-child(1) {
     margin-right: 50px;
 }
-
-
 
 .bannieres {
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banniere5.jpg);
@@ -271,9 +281,16 @@ h3 {
     transform: scale(-1, 1);
 }
 
-/* media queries */
+/********** media queries ************/
 
 @media screen and (max-width:767px) {
+
+    section.container {
+        /* position: relative; */
+        /* top: -150px; */
+        /* top: 50px;  */
+    }
+
     .second {
         display: flex;
         flex-direction: column-reverse;
@@ -294,55 +311,71 @@ h3 {
         top: 250px;
         left: 450px;
         color: white;
-}
+    }   
+
+    .commandeEtReserve a {
+        font-size: 0.8rem!important;
+    } 
+
+    .h2 h2 {
+        font-size: 1.3rem!important;
+    }
 
 }
 
 @media screen and (max-width:577px) {
     
-.h2 {
-        position: absolute;
-        top: 150px;
-        left: 0px;
-        color: white;
-}
+    .h2 {
+            position: absolute;
+            top: 150px;
+            left: 0px;
+            color: white;
+    }
 
-.bannieres {
-    height: 210vh;
-}
+    .bannieres {
+        height: 210vh;
+    }
 
 
-.varieteCards div.card {
-    width: 260px;
-    /* height: 160px; */
-}
+    .varieteCards div.card {
+        width: 260px;
+        /* height: 160px; */
+    }
 
-.card-body p {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 260px;
-}
+    .card-body p {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 260px;
+    }
 
-.card-body h5 {
-    max-width: 260px;
-}
+    .card-body h5 {
+        max-width: 260px;
+    }
 
 #variete1, #variete2, #variete3, #variete4 {
-    width: 260px;
-    height: 160px;
-}
+        width: 260px;
+        height: 160px;
+    }
 
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
     
     .h2 {
-            position: absolute;
-            top: 200px;
-            left: 400px;
-            color: white;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+        color: white;
+    }
+
+    .commandeEtReserve a {
+        font-size: 0.8rem!important;
+    } 
+
+    .h2 h2 {
+        font-size: 1.3rem!important;
     }
 
     .navbar-expand-lg {
@@ -361,7 +394,7 @@ h3 {
         /* background-color: transparent; */
     }
     
-    }
+}
 
 @media screen and (min-width:767px) and (max-width:1060px) {
 
@@ -375,5 +408,42 @@ h3 {
         height: 250vh;
     }
 
+}
+
+@media screen and (max-width:939px) {
+
+    header ul, header h1 {
+        display: inline-block;
+        text-align: center;
+        margin-left: 70px;
+    }
+
+    header h1 {
+        margin-left: 86px;
+    }
+
+    nav {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+}
+
+@media screen and (max-width:373px) {
+
+    .h2 {
+        position: absolute;
+        top: 180px;
+        
+        color: white;
+    }
+
+    .commandeEtReserve a {
+        font-size: 0.6rem!important;
+    } 
+
+    .h2 h2 {
+        font-size: 1.1rem!important;
+    }
 
 }
