@@ -4,14 +4,13 @@
     padding: 0;
 }
 
-/* header { */
+/* header {
     background-image: url(../img/Carrousel/carousel1.jpg);
-    background-size: cover; /* on couvre tout le header */
-    background-position: top; /* on centre l'image */
-    background-repeat: no-repeat; /* on ne répète pas l'image */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     height: 60vh;
-    
-}
+} */
 
 .carousel-inner {
     height: 60vh;
@@ -73,6 +72,10 @@ nav {
 
 ul.nav a {
     font-size: 0.8rem;
+}
+
+.btnnav a:hover {
+    color: white !important;
 }
 
 .btna {
